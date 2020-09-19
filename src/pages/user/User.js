@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './styles.css';
 
-class List extends Component {
+class User extends Component {
     render() {
         let list = [
             {
@@ -44,4 +44,4 @@ class List extends Component {
     }
 }
 
-export default List;
+export default User;

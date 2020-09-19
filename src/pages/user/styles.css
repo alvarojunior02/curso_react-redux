@@ -1,12 +1,10 @@
 table#user-table {
-    border-spacing: 1;
-    border-collapse: collapse;
-    background: white;
+    margin-top: 10px;
     border-radius: 5px;
-    overflow: hidden;
     width: 60%;
     margin: 0 auto;
     position: relative;
+    text-align: center;
 }
 
 table#user-table th {
