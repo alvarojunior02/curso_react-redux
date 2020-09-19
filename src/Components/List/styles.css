@@ -1,0 +1,20 @@
+table#user-table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+table#user-table th {
+    background: #000;
+    color: #fff;
+}
+
+table#user-table td {
+    background: #555;
+    color: #fff;
+}

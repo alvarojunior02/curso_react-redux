@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import List from './Components/List/List.js';
 
 class App extends Component {
 
@@ -67,6 +68,7 @@ class App extends Component {
         <div>
           <button onClick={this.changeState}>Mudar Estado</button>
           <button onClick={this.resetState}>Resetar Estado</button>
+        <List />
         </div>
       </div>
     );
