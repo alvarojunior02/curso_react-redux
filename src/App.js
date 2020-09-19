@@ -7,10 +7,13 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name:"Alvaro",
+      name:"",
+      email: "",
+
     }
     this.changeState = this.changeState.bind(this);
     this.resetState = this.resetState.bind(this);
+    this.changeInput = this.changeInput.bind(this);
   };
 
   changeState() {
@@ -25,11 +28,41 @@ class App extends Component {
     });
   }
 
+  changeInput(event) {
+    let target = event.target;
+    let index = target.name;
+    this.setState({
+      [index]: target.value
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <div>
-          {this.state.name}
+          <div>
+            <form>
+              <label>
+                Nome:
+                <input 
+                  type="text" 
+                  name="name" 
+                  value={this.state.name}
+                  onChange={this.changeInput}>
+                </input>
+              </label>
+              <label>
+                Email:
+                <input 
+                  type="text" 
+                  name="email" 
+                  value={this.state.email}
+                  onChange={this.changeInput}>
+                </input>
+              </label>
+            </form>
+          </div>
+          {this.state.name} - {this.state.email}
         </div>
         <div>
           <button onClick={this.changeState}>Mudar Estado</button>
